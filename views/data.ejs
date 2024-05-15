@@ -1,0 +1,47 @@
+<html>
+
+<body>
+    <%-include('nav')-%>
+        <center>
+            <h1>Getting Object Data</h1>
+        </center>
+        <hr>
+        <br><br>
+        <!-- 
+!-->
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <a href="/add" class="btn btn-success">add</a>
+
+                <table class="table table-bordered table-striped table-hover table-dark">
+                    <tr>
+                        <% Object.keys(data[0]).forEach(row=> { %>
+                            <td>
+                                <%=row%>
+                            </td>
+
+                            <% }) %>
+                    </tr>
+                    <% data.forEach(row=> { %>
+                        <tr>
+
+                            <td><%=row.id %></td>
+                            <td><%=row.name %></td>
+                            <td><%=row.class %></td>
+                             
+                            <td><img src=<%=row.image %> alt="" width ='50'> 
+                                &emsp;
+                             
+                                <a href="/update/?uid=<%= row.id %>" class="btn btn-success">edit</a>
+                                &emsp;
+                                <a href="/delete/?id=<%= row.id %>" class="btn btn-danger">delete</a>
+
+                            </td>
+                        </tr>
+                         
+                        <% }) %>
+
+</body>
+
+</html>

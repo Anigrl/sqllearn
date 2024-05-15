@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <%-include('nav')-%>
+        <center>
+            <h2>Welcome to login page</h2>
+        </center>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                 
+
+                <form>
+                          username
+                        <input type="text" name="user" class="form-control">
+                        
+                          password
+                        <input type="text" name="password" class="form-control">
+                        <br>
+
+                        <input type="submit" value="submit" name="submit" class="btn btn-success">
+                     
+                </form>
+                <h2>
+                    <%=msg %>
+                   </h2>
+                   <% if (status) { %>
+                    <!-- Code to be executed if the condition is true -->
+                    <a href="/register" class="btn btn-info">register</a>
+        
+                  <% }  %>
+                      
+            </div>
+           
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<html>
+<body>
+    <%-include('nav')-%>
+
+<center><h1>Welcoem to About page</h1></center>  <hr>  
+
+<h3>name of Company is =  <%=name%></h3>
+<h3>Phone of Company is =  <%=phone%></h3>
+<h3>Email of Company is =  <%=email%></h3>
+<h3>
+    Array is 
+</h3>
+
+
+ 
+<!--<br>
+<%=array[0]%><br>
+<%=array[1]%><br>
+<%=array[2]%><br>
+<%=array[3]%><br>
+<%=array[4]%><br>
+<%=array[5]%><br>
+
+<% array.forEach(row=>{
+%>
+
+    <%=row%><br>
+<%
+})%>!-->
+<ol>
+<% array.forEach(row=>{
+    %>
+    
+        <li><%=row%></li>
+    <%
+    })%>
+
+</ol>
+
+</body>
+</html>

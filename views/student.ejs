@@ -1,0 +1,88 @@
+<html lang="en">
+
+<body>
+    <%-include('nav')-%>
+        <center>
+            <h1>Welcome to operations page</h1>
+        </center>
+        <hr>
+        <br><br>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <h3>enter name</h3>
+                            <input type="text" name="name" class="form-control">
+                        </div>
+                        <div class="col">
+                            <h3>enter rollno</h3>
+                            <input type="number" name="ro" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col">
+                            <h3>english</h3>
+                            <input type="number" name="eng" class="form-control" max="">
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col">
+                            <h3>math</h3>
+                            <input type="number" name="math" class="form-control" max="">
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col">
+                            <h3>physics</h3>
+                            <input type="number" name="phy" class="form-control" max="">
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col">
+                            <h3>hindi</h3>
+                            <input type="number" name="hin" class="form-control" max="">
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col">
+                            <h3>chemistry</h3>
+                            <input type="number" name="chem" class="form-control" max="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+
+                            <input type="submit" name="submit" class="btn btn-success" value="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="col-md-4">
+                <table class="table table-striped table-bordred table-hover table-dark">
+
+                    <tr><td>english</td><td><%=eng%></td></tr>
+                    <tr><td>math</td><td><%=math%></td></tr>
+                     <tr><td>physics</td><td><%=phy%></td></tr>
+                     <tr><td>chemistry</td><td><%=chem%></td></tr>
+                     <tr><td>hindi</td><td><%=hin%></td></tr>
+                     <tr><td>total</td><td><%=total%></td></tr>
+                     <tr><td>percent</td><td><%=percent%></td></tr>
+        
+                </table>
+            </div>
+        </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <%-include('nav')-%>
+        <center>
+            <h2>Welcome to edit page</h2>
+        </center>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <%=msg %>
+
+                <form action="/uploadProfilePicture" enctype="multipart/form-data" method="post">
+                        enter name
+                        <input type="text" name="name" class="form-control">
+                        
+                        enter course
+                        <input type="text" name="class" class="form-control">
+                        <br>
+                        <h5>select image</h5>
+                        <input type="file" name="file" class="form-control">
+                        <br>
+
+                        <input type="submit" value="submit" class="btn btn-success" name="submit">
+                     
+                </form>
+            </div>
+              
+        </div>
+
+</body>
+
+</html>
